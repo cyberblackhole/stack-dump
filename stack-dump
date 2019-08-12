@@ -1,0 +1,89 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
+import requests
+import json
+import time
+import sys
+import argparse
+
+# get all questions having the content q
+# https://api.stackexchange.com/2.2/search/advanced?page=1&pagesize=10&order=asc&sort=relevance&q=sumeru&site=stackoverflow
+
+def get_request_limit(key):
+    res = requests.get("https://api.stackexchange.com/2.2/sites?page=1&pagesize=10&key={}".format(key))
+    if res.status_code == 200:
+        json_data = json.loads(res.content)
+        quota_remaining, quota_max=json_data['quota_remaining'],json_data['quota_max']
+        return quota_remaining,quota_max
+
+if __name__=='__main__':
+    parser = argparse.ArgumentParser(description='StackDump', epilog='''
+        Usage: stackdump -k "example"\n''',formatter_class=argparse.RawTextHelpFormatter)
+    
+    requiredparser=parser.add_argument_group('required arguments')
+    requiredparser.add_argument('-k','--keyword',help="Keyword to lookup",type=str,dest="keyword", required=True)
+    args = parser.parse_args()
+
+    top_stack_sites = ['stackoverflow', 'serverfault', 'superuser', 'meta', 'webapps', 'webapps.meta', 'gaming', 'gaming.meta', 'webmasters', 'webmasters.meta', 'cooking', 'cooking.meta', 'gamedev', 'gamedev.meta', 'photo', 'photo.meta', 'stats', 'stats.meta', 'math', 'math.meta', 'diy', 'diy.meta', 'meta.superuser', 'meta.serverfault', 'gis', 'gis.meta', 'tex', 'tex.meta', 'askubunt', 'meta.askubunt', 'money', 'money.meta', 'english', 'english.meta', 'stackapps', 'ux', 'ux.meta', 'unix', 'unix.meta', 'wordpress', 'wordpress.meta', 'cstheory', 'cstheory.meta', 'apple', 'apple.meta', 'rpg', 'rpg.meta', 'bicycles', 'bicycles.meta', 'softwareengineering', 'softwareengineering.meta', 'electronics', 'electronics.meta', 'android', 'android.meta', 'boardgames', 'boardgames.meta', 'physics', 'physics.meta', 'homebrew', 'homebrew.meta', 'security', 'security.meta', 'writing', 'writing.meta', 'video', 'video.meta', 'graphicdesign', 'graphicdesign.meta', 'dba', 'dba.meta', 'scifi', 'scifi.meta', 'codereview']
+    all_stack_sites=['stackoverflow', 'serverfault', 'superuser', 'meta', 'webapps', 'webapps.meta', 'gaming', 'gaming.meta', 'webmasters', 'webmasters.meta', 'cooking', 'cooking.meta', 'gamedev', 'gamedev.meta', 'photo', 'photo.meta', 'stats', 'stats.meta', 'math', 'math.meta', 'diy', 'diy.meta', 'meta.superuser', 'meta.serverfault', 'gis', 'gis.meta', 'tex', 'tex.meta', 'askubunt', 'meta.askubunt', 'money', 'money.meta', 'english', 'english.meta', 'stackapps', 'ux', 'ux.meta', 'unix', 'unix.meta', 'wordpress', 'wordpress.meta', 'cstheory', 'cstheory.meta', 'apple', 'apple.meta', 'rpg', 'rpg.meta', 'bicycles', 'bicycles.meta', 'softwareengineering', 'softwareengineering.meta', 'electronics', 'electronics.meta', 'android', 'android.meta', 'boardgames', 'boardgames.meta', 'physics', 'physics.meta', 'homebrew', 'homebrew.meta', 'security', 'security.meta', 'writing', 'writing.meta', 'video', 'video.meta', 'graphicdesign', 'graphicdesign.meta', 'dba', 'dba.meta', 'scifi', 'scifi.meta', 'codereview', 'codereview.meta', 'codegolf', 'codegolf.meta', 'quant', 'quant.meta', 'pm', 'pm.meta', 'skeptics', 'skeptics.meta', 'fitness', 'fitness.meta', 'drupal', 'drupal.meta', 'mechanics', 'mechanics.meta', 'parenting', 'parenting.meta', 'sharepoint', 'sharepoint.meta', 'music', 'music.meta', 'sqa', 'sqa.meta', 'judaism', 'judaism.meta', 'german', 'german.meta', 'japanese', 'japanese.meta', 'philosophy', 'philosophy.meta', 'gardening', 'gardening.meta', 'travel', 'travel.meta', 'crypto', 'crypto.meta', 'dsp', 'dsp.meta', 'french', 'french.meta', 'christianity', 'christianity.meta', 'bitcoin', 'bitcoin.meta', 'linguistics', 'linguistics.meta', 'hermeneutics', 'hermeneutics.meta', 'history', 'history.meta', 'bricks', 'bricks.meta', 'spanish', 'spanish.meta', 'scicomp', 'scicomp.meta', 'movies', 'movies.meta', 'chinese', 'chinese.meta', 'biology', 'biology.meta', 'poker', 'poker.meta', 'mathematica', 'mathematica.meta', 'psychology', 'psychology.meta', 'outdoors', 'outdoors.meta', 'martialarts', 'martialarts.meta', 'sports', 'sports.meta', 'academia', 'academia.meta', 'cs', 'cs.meta', 'workplace', 'workplace.meta', 'windowsphone', 'windowsphone.meta', 'chemistry', 'chemistry.meta', 'chess', 'chess.meta', 'raspberrypi', 'raspberrypi.meta', 'russian', 'russian.meta', 'islam', 'islam.meta', 'salesforce', 'salesforce.meta', 'patents', 'patents.meta', 'genealogy', 'genealogy.meta', 'robotics', 'robotics.meta', 'expressionengine', 'expressionengine.meta', 'politics', 'politics.meta', 'anime', 'anime.meta', 'magento', 'magento.meta', 'ell', 'ell.meta', 'sustainability', 'sustainability.meta', 'tridion', 'tridion.meta', 'reverseengineering', 'reverseengineering.meta', 'networkengineering', 'networkengineering.meta', 'opendata', 'opendata.meta', 'freelancing', 'freelancing.meta', 'blender', 'blender.meta', 'mathoverflow.net', 'meta.mathoverflow.net', 'space', 'space.meta', 'sound', 'sound.meta', 'astronomy', 'astronomy.meta', 'tor', 'tor.meta', 'pets', 'pets.meta', 'ham' , 'ham.meta', 'italian', 'italian.meta', 'pt.stackoverflow', 'pt.meta.stackoverflow', 'aviation', 'aviation.meta', 'ebooks', 'ebooks.meta', 'alcohol', 'alcohol.meta', 'softwarerecs', 'softwarerecs.meta', 'arduino', 'arduino.meta', 'cs50', 'cs50.meta', 'expatriates', 'expatriates.meta', 'matheducators', 'matheducators.meta', 'meta.stackoverflow', 'earthscience', 'earthscience.meta', 'joomla', 'joomla.meta', 'datascience', 'datascience.meta', 'puzzling', 'puzzling.meta', 'craftcms', 'craftcms.meta', 'buddhism', 'buddhism.meta', 'hinduism', 'hinduism.meta', 'communitybuilding', 'communitybuilding.meta', 'worldbuilding', 'worldbuilding.meta', 'ja.stackoverflow', 'ja.meta.stackoverflow', 'emacs', 'emacs.meta', 'hsm', 'hsm.meta', 'economics', 'economics.meta', 'lifehacks', 'lifehacks.meta', 'engineering', 'engineering.meta', 'coffee', 'coffee.meta', 'vi', 'vi.meta', 'musicfans', 'musicfans.meta', 'woodworking', 'woodworking.meta', 'civicrm', 'civicrm.meta', 'medicalsciences', 'medicalsciences.meta', 'ru.stackoverflow', 'ru.meta.stackoverflow', 'rus', 'rus.meta', 'mythology', 'mythology.meta', 'law', 'law.meta', 'opensource', 'opensource.meta', 'elementaryos', 'elementaryos.meta', 'portuguese', 'portuguese.meta', 'computergraphics', 'computergraphics.meta', 'hardwarerecs', 'hardwarerecs.meta', 'es.stackoverflow', 'es.meta.stackoverflow', '3dprinting', '3dprinting.meta', 'ethereum', 'ethereum.meta', 'latin', 'latin.meta', 'languagelearning', 'languagelearning.meta', 'retrocomputing', 'retrocomputing.meta', 'crafts', 'crafts.meta', 'korean', 'korean.meta', 'monero', 'monero.meta', 'ai', 'ai.meta', 'esperanto', 'esperanto.meta', 'sitecore', 'sitecore.meta', 'iot', 'iot.meta', 'literature', 'literature.meta', 'vegetarianism', 'vegetarianism.meta', 'ukrainian', 'ukrainian.meta', 'devops', 'devops.meta', 'bioinformatics', 'bioinformatics.meta', 'cseducators', 'cseducators.meta', 'interpersonal', 'interpersonal.meta', 'iota', 'iota.meta', 'stellar', 'stellar.meta', 'conlang', 'conlang.meta']
+    apilink = "https://api.stackexchange.com/2.2/search/advanced"
+    page=1
+    pagesize=10
+
+    # your api key here
+    api_key = ""
+
+    if args.keyword:
+        print("\t{:^20}{:^20}{:^20}{:^30}".format("KEYWORD-NAME","SITE","API-QUOTA","DETAILS"))
+        total = len(top_stack_sites)
+        for site in top_stack_sites:   
+            completed=1
+            quota_remaining,quota_max = get_request_limit(api_key)
+            keyword_name = args.keyword
+            if quota_remaining > 0:
+                while True:
+                    query_string = "?page={}&pagesize={}&order=asc&sort=relevance&q={}&site={}&key={}".format(page,pagesize,keyword_name,site,api_key)
+                    url = apilink + query_string
+                    response = requests.get(url)
+                    page += 1
+
+                    json_data = json.loads(response.content)
+                
+                    quota_remaining, quota_max=get_request_limit(api_key)
+                    has_more_data = json_data['has_more']
+
+                    if 'items' in json_data:
+                        result_items = json_data['items']
+                        if len(result_items) > 0:
+                            for item in result_items:
+                                link="Link: " + str(item['link'].encode("utf-8"))
+                                quota_status = str(quota_remaining)+"/"+str(quota_max)
+                                title = "Title: " + str(item['title'].encode("utf-8"))
+                                result_site = site +': '+ str(completed) +'/'+ str(total)
+                                print("\t{:^20}{:^20}{:^20}{:^30}".format(keyword_name,result_site, quota_status, title))
+                                print("\t{:^20}{:^20}{:^20}{:^30}".format("","","",link))
+                            print("\n")
+                        else:
+                            result_site = site +': '+ str(completed) +'/'+ str(total)
+                            print("\t{:^20}{:^20}{:^20}{:^30}".format(keyword_name,result_site,quota_status,"No Results"))
+                            print("\n")
+                            break
+                    else:
+                        result_site = site +': '+ str(completed) +'/'+ str(total)
+                        print("\t{:^20}{:^20}{:^20}{:^30}".format(keyword_name,result_site,quota_status,"No Results"))
+                        print("\n")
+                        break
+
+                    if quota_remaining == 0:
+                        print("Daily Quota Exaushed: Try Later")
+                        break
+                    
+                    if not has_more_data:
+                        # print "End of results"
+                        break
+            else:
+                print("Daily Quota Exaushed: Try Later")
+
+    
+
