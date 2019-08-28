@@ -2,12 +2,19 @@
 # -*- coding: utf-8 -*-
 
 from requests import get
+from os import environ
+from sys import exit
+from datetime import datetime
 import json
 from html import unescape
 from argparse import ArgumentParser, RawTextHelpFormatter
-from naryal2580.style import info, fetchFormattedTime, uline, bold, italic, \
-  dim, blue, yellow, rst, bad, coolExit
 
+try:
+    from naryal2580.style import info, fetchFormattedTime, uline, bold, italic, \
+  dim, blue, yellow, rst, bad, coolExit
+except ImportError:
+    print("Install missing package with `pip3 install -r ./requirements.txt`", end='\n\n')
+    exit(1)
 
 __version__ = 0.7
 
@@ -21,8 +28,21 @@ banner = '''
                                                                     __version__
                                                                         )[1:]
 
-stack_sites = json.load(open('stackSites.json'))  # For saving some time, LOL!
 
+print(banner)
+
+try:
+    if environ['STACK_API_KEY']:
+        api_key = environ['STACK_API_KEY']
+except KeyError:
+    print(bad("Please Export API key `export STACK_API_KEY='your_key_here'`\n check https://stackapps.com/apps/oauth/register for more details"), end='\n\n')
+    coolExit(1)
+
+try:
+    stack_sites = json.load(open('stackSites.json'))
+except:
+    print(bad("Problem with opening stackSites.json File"), end='\n\n')
+    coolExit(1)
 
 def printResult(keyword, title, link, site, quota):
     colorOut = '{}{}{}> {}{}{} {}{}{}{} | {}{}{} [{}{}{}]'.format(
@@ -59,7 +79,6 @@ def get_request_limit(key):
 
 
 if __name__ == '__main__':
-    print(banner)
     parser = ArgumentParser(
         description='StackDump', epilog='''Example: stackdump -k "example"\n''',
         formatter_class=RawTextHelpFormatter)
@@ -69,84 +88,85 @@ if __name__ == '__main__':
                                 type=str, dest="keyword", required=True)
     args = parser.parse_args()
 
-    print(info('Started [at] {}'.format(fetchFormattedTime())), end='\n\n')
+    print(info('Started [at] {}'.format(datetime.now())), end='\n\n')
 
     apilink = "https://api.stackexchange.com/2.2/search/advanced"
     page = 1
     pagesize = 10
 
-    api_key = "r)lrQZJ59OshbVWnjkbC5Q(("  # Your API key here
-
     if args.keyword:
-        site_itr_total = len(stack_sites['top_stack_sites'])
-        site_itr_current = 0
-        for site in stack_sites['top_stack_sites']:
-            site_itr_current += 1
-            quota_remaining, quota_max = get_request_limit(api_key)
-            keyword_name = args.keyword
-            if quota_remaining > 0:
-                while 1:
-                    query_string = '?page={}&pagesize={}&order=asc&sor'.format(
-                        page, pagesize)
-                    query_string += "t=relevance&q={}&site={}&key={}".format(
-                        keyword_name, site, api_key)
-                    url = apilink + query_string
-                    response = get(url)
-                    page += 1
+        try:
+            site_itr_total = len(stack_sites['top_stack_sites'])
+            site_itr_current = 0
+            for site in stack_sites['top_stack_sites']:
+                site_itr_current += 1
+                quota_remaining, quota_max = get_request_limit(api_key)
+                keyword_name = args.keyword
+                if quota_remaining > 0:
+                    while 1:
+                        query_string = '?page={}&pagesize={}&order=asc&sor'.format(
+                            page, pagesize)
+                        query_string += "t=relevance&q={}&site={}&key={}".format(
+                            keyword_name, site, api_key)
+                        url = apilink + query_string
+                        response = get(url)
+                        page += 1
 
-                    json_data = json.loads(response.content)
+                        json_data = json.loads(response.content)
 
-                    if 'items' in json_data:
-                        quota_remaining, quota_max = get_request_limit(api_key)
-                        result_items = json_data['items']
-                        if len(result_items) > 0:
-                            for item in result_items:
-                                link = unescape(str(item['link']))
+                        if 'items' in json_data:
+                            quota_remaining, quota_max = get_request_limit(api_key)
+                            result_items = json_data['items']
+                            if len(result_items) > 0:
+                                for item in result_items:
+                                    link = unescape(str(item['link']))
+                                    quota_status = str(quota_remaining)+"/"+str(
+                                                                        quota_max
+                                                                            )
+                                    title = unescape(str(item['title']))
+                                    result_site = '{}({}/{})'.format(
+                                                                site,
+                                                                site_itr_current,
+                                                                site_itr_total
+                                                                    )
+                                    printResult(keyword_name, title, link, site,
+                                                quota_status)
+                            else:
+                                quota_remaining, quota_max = get_request_limit(
+                                                                            api_key
+                                                                            )
                                 quota_status = str(quota_remaining)+"/"+str(
-                                                                      quota_max
-                                                                           )
-                                title = unescape(str(item['title']))
+                                                                        quota_max
+                                                                            )
                                 result_site = '{}({}/{})'.format(
-                                                              site,
-                                                              site_itr_current,
-                                                              site_itr_total
+                                                                site,
+                                                                site_itr_current,
+                                                                site_itr_total
                                                                 )
-                                printResult(keyword_name, title, link, site,
+                                printResult(keyword_name, "None", "None", site,
                                             quota_status)
+                                break
                         else:
-                            quota_remaining, quota_max = get_request_limit(
-                                                                        api_key
-                                                                        )
-                            quota_status = str(quota_remaining)+"/"+str(
-                                                                      quota_max
-                                                                           )
+                            quota_remaining, quota_max = get_request_limit(api_key)
+                            quota_status = str(quota_remaining)+"/"+str(quota_max)
                             result_site = '{}({}/{})'.format(
-                                                             site,
-                                                             site_itr_current,
-                                                             site_itr_total
-                                                             )
+                                                            site,
+                                                            site_itr_current,
+                                                            site_itr_total
+                                                            )
                             printResult(keyword_name, "None", "None", site,
                                         quota_status)
                             break
-                    else:
-                        quota_remaining, quota_max = get_request_limit(api_key)
-                        quota_status = str(quota_remaining)+"/"+str(quota_max)
-                        result_site = '{}({}/{})'.format(
-                                                         site,
-                                                         site_itr_current,
-                                                         site_itr_total
-                                                         )
-                        printResult(keyword_name, "None", "None", site,
-                                    quota_status)
-                        break
 
-                    if quota_remaining == 0:
-                        print(bad('Error -> API Quota Exaushed'), end='\n\n')
+                        if quota_remaining == 0:
+                            print(bad('Error -> API Quota Exaushed'), end='\n\n')
+                            coolExit(1)
+
+                        break 
+                else:
+                    print(bad('Error -> API Quota Exaushed'), end='\n\n')
+                    break
+            coolExit(0)
+        except KeyboardInterrupt:
+                        print(bad("Interupt Received"), end='\n\n')
                         coolExit(1)
-
-                    break  # GTFO the oxo loop!
-            else:
-                print(bad('Error -> API Quota Exaushed'), end='\n\n')
-                break
-                coolExit(1)
-        coolExit(0)
