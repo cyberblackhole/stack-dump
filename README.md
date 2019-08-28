@@ -40,5 +40,3 @@ Example: stackdump -k "example"
 #### Demo:
 
 [![Demo](https://asciinema.org/a/264650.svg)](https://asciinema.org/a/264650?autoplay=1)
-
-**NOTE**: Edit code, and modify API key for more API Quota from `api_key` variable @ line 78.
