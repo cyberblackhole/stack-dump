@@ -12,6 +12,7 @@ Get _Links_ and **Title** from a <u>keyword</u> from Stack Exchange sites. Very 
 - [ ] Better exception handling.
 - [ ] Local API quota calculation, for saving it.
 - [ ] Multicolored requests.
+- [ ] Writing output to different file formats
 
 
 #### Usage:
@@ -38,7 +39,6 @@ Example: stackdump -k "example"
 
 #### Demo:
 
-[![demo](https://asciinema.org/a/264545.svg)](https://asciinema.org/a/264545?autoplay=1)
-
+[![Demo](https://asciinema.org/a/264650.svg)](https://asciinema.org/a/264650?autoplay=1)
 
 **NOTE**: Edit code, and modify API key for more API Quota from `api_key` variable @ line 78.
