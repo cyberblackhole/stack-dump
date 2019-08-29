@@ -1,5 +1,5 @@
 # Stack Dump
-Information Gathering tool to get _Links_ and **Title** from a <u>keyword</u> from Stack Exchange sites. 
+Information Gathering tool to get _Links_ and **Title** from Stack Exchange sites for a specific <u>keyword</u>. 
 
 
 #### Features:
