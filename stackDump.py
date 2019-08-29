@@ -115,6 +115,7 @@ if __name__ == '__main__':
                 site_itr_current += 1
                 quota_remaining, quota_max = get_request_limit(api_key)
                 keyword_name = args.keyword
+                page=1
                 while quota_remaining > 0:
                     query_string = '?page={}&pagesize={}&order=asc&sort=relevance&q={}&site={}&key={}'.format(
                         page, pagesize, keyword_name, site, api_key)
@@ -166,6 +167,7 @@ if __name__ == '__main__':
                         break
 
                     if page == maxpages + 1:
+                        print("max")
                         break
 
                     if quota_remaining == 0:

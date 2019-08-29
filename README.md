@@ -1,11 +1,11 @@
 # Stack Dump
-Get _Links_ and **Title** from a <u>keyword</u> from Stack Exchange sites. Very useful, as it saves time. 
+Information Gathering tool to get _Links_ and **Title** from a <u>keyword</u> from Stack Exchange sites. 
 
 
 #### Features:
 
-- [x] Using Stack Exchange reference through the Terminal. :computer:
-- [x] Colorful CLI for catchy results from an eye :wink:
+- [x] Using Stack Exchange Advanced Search through the Terminal. :computer:
+- [x] Colorful CLI for catchy results :wink:
 
 
 #### TODOs:
