@@ -9,9 +9,6 @@ Get _Links_ and **Title** from a <u>keyword</u> from Stack Exchange sites. Very 
 
 
 #### TODOs:
-- [ ] Better exception handling.
-- [ ] Local API quota calculation, for saving it.
-- [ ] Multicolored requests.
 - [ ] Writing output to different file formats
 
 
@@ -24,15 +21,18 @@ Get _Links_ and **Title** from a <u>keyword</u> from Stack Exchange sites. Very 
  ___) | || (_| | (__|   <  | |_| | |_| | | | | | | |_) |
 |____/ \__\__,_|\___|_|\_\ |____/ \__,_|_| |_| |_| .__/
                                                  |_|     v0.7
-usage: stackDump.py [-h] -k KEYWORD
+usage: stackDump.py [-h] -k KEYWORD [-l LIMIT]
 
 StackDump
 
 optional arguments:
-  -h, --help                      show this help message and exit
+  -h, --help            show this help message and exit
 
 required arguments:
-  -k KEYWORD, --keyword KEYWORD   Keyword to lookup
+  -k KEYWORD, --keyword KEYWORD
+                        Keyword to lookup
+  -l LIMIT, --limit LIMIT
+                        Limit Results per Stack Site: min:10
 
 Example: stackdump -k "example"
 ```
