@@ -167,8 +167,6 @@ def stackSearch(keyword_name,pagesize,maxpages,stack_search_apilink):
                 print(bad('Error -> API Quota Exaushed'), end='\n\n')
 
 def stackUserSearch(username,pagesize,maxpages,user_search_apilink,casesensitvie):
-    printResult("UserName", "Main AccountId", "URL", "Stack Site",
-                                    "Your Quota")
     site_itr_total = len(stack_sites['top_stack_sites'])
     site_itr_current = 0
     for site in stack_sites['top_stack_sites']:
@@ -181,6 +179,9 @@ def stackUserSearch(username,pagesize,maxpages,user_search_apilink,casesensitvie
             url = user_search_apilink + query_string
             response = get(url)
             quota_remaining, quota_max = get_request_limit(api_key)
+            quota_status = str(quota_remaining)+"/"+str(
+                                                                    quota_max
+                                                                        )
             page += 1
 
             json_data = json.loads(response.content)
@@ -192,9 +193,7 @@ def stackUserSearch(username,pagesize,maxpages,user_search_apilink,casesensitvie
                         if casesensitvie:
                             if str(item['display_name']).lower() == username.lower():
                                 link = unescape(str(item['link']))
-                                quota_status = str(quota_remaining)+"/"+str(
-                                                                    quota_max
-                                                                        )
+                                
                                 title = unescape(str(item['account_id']))
                                 result_site = '{}({}/{})'.format(
                                                             site,
@@ -205,9 +204,6 @@ def stackUserSearch(username,pagesize,maxpages,user_search_apilink,casesensitvie
                                             quota_status)
                         else:
                             link = unescape(str(item['link']))
-                            quota_status = str(quota_remaining)+"/"+str(
-                                                                quota_max
-                                                                    )
                             title = unescape(str(item['account_id']))
                             result_site = '{}({}/{})'.format(
                                                         site,
@@ -217,9 +213,6 @@ def stackUserSearch(username,pagesize,maxpages,user_search_apilink,casesensitvie
                             printResult(username, title, link, site,
                                         quota_status)
                 else:
-                    quota_status = str(quota_remaining)+"/"+str(
-                                                            quota_max
-                                                                )
                     result_site = '{}({}/{})'.format(
                                                     site,
                                                     site_itr_current,
