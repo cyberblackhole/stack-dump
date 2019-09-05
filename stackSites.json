@@ -1,420 +1,1698 @@
 {
-  "all_stack_sites": [
-    "stackoverflow",
-    "serverfault",
-    "superuser",
-    "meta",
-    "webapps",
-    "webapps.meta",
-    "gaming",
-    "gaming.meta",
-    "webmasters",
-    "webmasters.meta",
-    "cooking",
-    "cooking.meta",
-    "gamedev",
-    "gamedev.meta",
-    "photo",
-    "photo.meta",
-    "stats",
-    "stats.meta",
-    "math",
-    "math.meta",
-    "diy",
-    "diy.meta",
-    "meta.superuser",
-    "meta.serverfault",
-    "gis",
-    "gis.meta",
-    "tex",
-    "tex.meta",
-    "askubunt",
-    "meta.askubunt",
-    "money",
-    "money.meta",
-    "english",
-    "english.meta",
-    "stackapps",
-    "ux",
-    "ux.meta",
-    "unix",
-    "unix.meta",
-    "wordpress",
-    "wordpress.meta",
-    "cstheory",
-    "cstheory.meta",
-    "apple",
-    "apple.meta",
-    "rpg",
-    "rpg.meta",
-    "bicycles",
-    "bicycles.meta",
-    "softwareengineering",
-    "softwareengineering.meta",
-    "electronics",
-    "electronics.meta",
-    "android",
-    "android.meta",
-    "boardgames",
-    "boardgames.meta",
-    "physics",
-    "physics.meta",
-    "homebrew",
-    "homebrew.meta",
-    "security",
-    "security.meta",
-    "writing",
-    "writing.meta",
-    "video",
-    "video.meta",
-    "graphicdesign",
-    "graphicdesign.meta",
-    "dba",
-    "dba.meta",
-    "scifi",
-    "scifi.meta",
-    "codereview",
-    "codereview.meta",
-    "codegolf",
-    "codegolf.meta",
-    "quant",
-    "quant.meta",
-    "pm",
-    "pm.meta",
-    "skeptics",
-    "skeptics.meta",
-    "fitness",
-    "fitness.meta",
-    "drupal",
-    "drupal.meta",
-    "mechanics",
-    "mechanics.meta",
-    "parenting",
-    "parenting.meta",
-    "sharepoint",
-    "sharepoint.meta",
-    "music",
-    "music.meta",
-    "sqa",
-    "sqa.meta",
-    "judaism",
-    "judaism.meta",
-    "german",
-    "german.meta",
-    "japanese",
-    "japanese.meta",
-    "philosophy",
-    "philosophy.meta",
-    "gardening",
-    "gardening.meta",
-    "travel",
-    "travel.meta",
-    "crypto",
-    "crypto.meta",
-    "dsp",
-    "dsp.meta",
-    "french",
-    "french.meta",
-    "christianity",
-    "christianity.meta",
-    "bitcoin",
-    "bitcoin.meta",
-    "linguistics",
-    "linguistics.meta",
-    "hermeneutics",
-    "hermeneutics.meta",
-    "history",
-    "history.meta",
-    "bricks",
-    "bricks.meta",
-    "spanish",
-    "spanish.meta",
-    "scicomp",
-    "scicomp.meta",
-    "movies",
-    "movies.meta",
-    "chinese",
-    "chinese.meta",
-    "biology",
-    "biology.meta",
-    "poker",
-    "poker.meta",
-    "mathematica",
-    "mathematica.meta",
-    "psychology",
-    "psychology.meta",
-    "outdoors",
-    "outdoors.meta",
-    "martialarts",
-    "martialarts.meta",
-    "sports",
-    "sports.meta",
-    "academia",
-    "academia.meta",
-    "cs",
-    "cs.meta",
-    "workplace",
-    "workplace.meta",
-    "windowsphone",
-    "windowsphone.meta",
-    "chemistry",
-    "chemistry.meta",
-    "chess",
-    "chess.meta",
-    "raspberrypi",
-    "raspberrypi.meta",
-    "russian",
-    "russian.meta",
-    "islam",
-    "islam.meta",
-    "salesforce",
-    "salesforce.meta",
-    "patents",
-    "patents.meta",
-    "genealogy",
-    "genealogy.meta",
-    "robotics",
-    "robotics.meta",
-    "expressionengine",
-    "expressionengine.meta",
-    "politics",
-    "politics.meta",
-    "anime",
-    "anime.meta",
-    "magento",
-    "magento.meta",
-    "ell",
-    "ell.meta",
-    "sustainability",
-    "sustainability.meta",
-    "tridion",
-    "tridion.meta",
-    "reverseengineering",
-    "reverseengineering.meta",
-    "networkengineering",
-    "networkengineering.meta",
-    "opendata",
-    "opendata.meta",
-    "freelancing",
-    "freelancing.meta",
-    "blender",
-    "blender.meta",
-    "mathoverflow.net",
-    "meta.mathoverflow.net",
-    "space",
-    "space.meta",
-    "sound",
-    "sound.meta",
-    "astronomy",
-    "astronomy.meta",
-    "tor",
-    "tor.meta",
-    "pets",
-    "pets.meta",
-    "ham",
-    "ham.meta",
-    "italian",
-    "italian.meta",
-    "pt.stackoverflow",
-    "pt.meta.stackoverflow",
-    "aviation",
-    "aviation.meta",
-    "ebooks",
-    "ebooks.meta",
-    "alcohol",
-    "alcohol.meta",
-    "softwarerecs",
-    "softwarerecs.meta",
-    "arduino",
-    "arduino.meta",
-    "cs50",
-    "cs50.meta",
-    "expatriates",
-    "expatriates.meta",
-    "matheducators",
-    "matheducators.meta",
-    "meta.stackoverflow",
-    "earthscience",
-    "earthscience.meta",
-    "joomla",
-    "joomla.meta",
-    "datascience",
-    "datascience.meta",
-    "puzzling",
-    "puzzling.meta",
-    "craftcms",
-    "craftcms.meta",
-    "buddhism",
-    "buddhism.meta",
-    "hinduism",
-    "hinduism.meta",
-    "communitybuilding",
-    "communitybuilding.meta",
-    "worldbuilding",
-    "worldbuilding.meta",
-    "ja.stackoverflow",
-    "ja.meta.stackoverflow",
-    "emacs",
-    "emacs.meta",
-    "hsm",
-    "hsm.meta",
-    "economics",
-    "economics.meta",
-    "lifehacks",
-    "lifehacks.meta",
-    "engineering",
-    "engineering.meta",
-    "coffee",
-    "coffee.meta",
-    "vi",
-    "vi.meta",
-    "musicfans",
-    "musicfans.meta",
-    "woodworking",
-    "woodworking.meta",
-    "civicrm",
-    "civicrm.meta",
-    "medicalsciences",
-    "medicalsciences.meta",
-    "ru.stackoverflow",
-    "ru.meta.stackoverflow",
-    "rus",
-    "rus.meta",
-    "mythology",
-    "mythology.meta",
-    "law",
-    "law.meta",
-    "opensource",
-    "opensource.meta",
-    "elementaryos",
-    "elementaryos.meta",
-    "portuguese",
-    "portuguese.meta",
-    "computergraphics",
-    "computergraphics.meta",
-    "hardwarerecs",
-    "hardwarerecs.meta",
-    "es.stackoverflow",
-    "es.meta.stackoverflow",
-    "3dprinting",
-    "3dprinting.meta",
-    "ethereum",
-    "ethereum.meta",
-    "latin",
-    "latin.meta",
-    "languagelearning",
-    "languagelearning.meta",
-    "retrocomputing",
-    "retrocomputing.meta",
-    "crafts",
-    "crafts.meta",
-    "korean",
-    "korean.meta",
-    "monero",
-    "monero.meta",
-    "ai",
-    "ai.meta",
-    "esperanto",
-    "esperanto.meta",
-    "sitecore",
-    "sitecore.meta",
-    "iot",
-    "iot.meta",
-    "literature",
-    "literature.meta",
-    "vegetarianism",
-    "vegetarianism.meta",
-    "ukrainian",
-    "ukrainian.meta",
-    "devops",
-    "devops.meta",
-    "bioinformatics",
-    "bioinformatics.meta",
-    "cseducators",
-    "cseducators.meta",
-    "interpersonal",
-    "interpersonal.meta",
-    "iota",
-    "iota.meta",
-    "stellar",
-    "stellar.meta",
-    "conlang",
-    "conlang.meta"
-  ],
-  "top_stack_sites": [
-    "stackoverflow",
-    "serverfault",
-    "superuser",
-    "meta",
-    "webapps",
-    "webapps.meta",
-    "gaming",
-    "gaming.meta",
-    "webmasters",
-    "webmasters.meta",
-    "cooking",
-    "cooking.meta",
-    "gamedev",
-    "gamedev.meta",
-    "photo",
-    "photo.meta",
-    "stats",
-    "stats.meta",
-    "math",
-    "math.meta",
-    "diy",
-    "diy.meta",
-    "meta.superuser",
-    "meta.serverfault",
-    "gis",
-    "gis.meta",
-    "tex",
-    "tex.meta",
-    "askubunt",
-    "meta.askubunt",
-    "money",
-    "money.meta",
-    "english",
-    "english.meta",
-    "stackapps",
-    "ux",
-    "ux.meta",
-    "unix",
-    "unix.meta",
-    "wordpress",
-    "wordpress.meta",
-    "cstheory",
-    "cstheory.meta",
-    "apple",
-    "apple.meta",
-    "rpg",
-    "rpg.meta",
-    "bicycles",
-    "bicycles.meta",
-    "softwareengineering",
-    "softwareengineering.meta",
-    "electronics",
-    "electronics.meta",
-    "android",
-    "android.meta",
-    "boardgames",
-    "boardgames.meta",
-    "physics",
-    "physics.meta",
-    "homebrew",
-    "homebrew.meta",
-    "security",
-    "security.meta",
-    "writing",
-    "writing.meta",
-    "video",
-    "video.meta",
-    "graphicdesign",
-    "graphicdesign.meta",
-    "dba",
-    "dba.meta",
-    "scifi",
-    "scifi.meta",
-    "codereview"
-  ]
+  "all_stack_sites": {
+    "Stack Overflow": {
+      "name": "stackoverflow",
+      "url": "https://stackoverflow.com"
+    },
+    "Server Fault": {
+      "name": "serverfault",
+      "url": "https://serverfault.com"
+    },
+    "Super User": {
+      "name": "superuser",
+      "url": "https://superuser.com"
+    },
+    "Meta Stack Exchange": {
+      "name": "meta",
+      "url": "https://meta.stackexchange.com"
+    },
+    "Web Applications Stack Exchange": {
+      "name": "webapps",
+      "url": "https://webapps.stackexchange.com"
+    },
+    "Web Applications Meta": {
+      "name": "webapps.meta",
+      "url": "https://webapps.meta.stackexchange.com"
+    },
+    "Arqade": {
+      "name": "gaming",
+      "url": "https://gaming.stackexchange.com"
+    },
+    "Arqade Meta": {
+      "name": "gaming.meta",
+      "url": "https://gaming.meta.stackexchange.com"
+    },
+    "Webmasters": {
+      "name": "webmasters",
+      "url": "https://webmasters.stackexchange.com"
+    },
+    "Webmasters Meta": {
+      "name": "webmasters.meta",
+      "url": "https://webmasters.meta.stackexchange.com"
+    },
+    "Seasoned Advice": {
+      "name": "cooking",
+      "url": "https://cooking.stackexchange.com"
+    },
+    "Seasoned Advice Meta": {
+      "name": "cooking.meta",
+      "url": "https://cooking.meta.stackexchange.com"
+    },
+    "Game Development": {
+      "name": "gamedev",
+      "url": "https://gamedev.stackexchange.com"
+    },
+    "Game Development Meta": {
+      "name": "gamedev.meta",
+      "url": "https://gamedev.meta.stackexchange.com"
+    },
+    "Photography": {
+      "name": "photo",
+      "url": "https://photo.stackexchange.com"
+    },
+    "Photography Meta": {
+      "name": "photo.meta",
+      "url": "https://photo.meta.stackexchange.com"
+    },
+    "Cross Validated": {
+      "name": "stats",
+      "url": "https://stats.stackexchange.com"
+    },
+    "Cross Validated Meta": {
+      "name": "stats.meta",
+      "url": "https://stats.meta.stackexchange.com"
+    },
+    "Mathematics": {
+      "name": "math",
+      "url": "https://math.stackexchange.com"
+    },
+    "Mathematics Meta": {
+      "name": "math.meta",
+      "url": "https://math.meta.stackexchange.com"
+    },
+    "Home Improvement": {
+      "name": "diy",
+      "url": "https://diy.stackexchange.com"
+    },
+    "Home Improvement Meta": {
+      "name": "diy.meta",
+      "url": "https://diy.meta.stackexchange.com"
+    },
+    "Meta Super User": {
+      "name": "meta.superuser",
+      "url": "https://meta.superuser.com"
+    },
+    "Meta Server Fault": {
+      "name": "meta.serverfault",
+      "url": "https://meta.serverfault.com"
+    },
+    "Geographic Information Systems": {
+      "name": "gis",
+      "url": "https://gis.stackexchange.com"
+    },
+    "Geographic Information Systems Meta": {
+      "name": "gis.meta",
+      "url": "https://gis.meta.stackexchange.com"
+    },
+    "TeX - LaTeX": {
+      "name": "tex",
+      "url": "https://tex.stackexchange.com"
+    },
+    "TeX - LaTeX Meta": {
+      "name": "tex.meta",
+      "url": "https://tex.meta.stackexchange.com"
+    },
+    "Ask Ubuntu": {
+      "name": "askubuntu",
+      "url": "https://askubuntu.com"
+    },
+    "Ask Ubuntu Meta": {
+      "name": "meta.askubuntu",
+      "url": "https://meta.askubuntu.com"
+    },
+    "Personal Finance & Money": {
+      "name": "money",
+      "url": "https://money.stackexchange.com"
+    },
+    "Personal Finance & Money Meta": {
+      "name": "money.meta",
+      "url": "https://money.meta.stackexchange.com"
+    },
+    "English Language & Usage": {
+      "name": "english",
+      "url": "https://english.stackexchange.com"
+    },
+    "English Language & Usage Meta": {
+      "name": "english.meta",
+      "url": "https://english.meta.stackexchange.com"
+    },
+    "Stack Apps": {
+      "name": "stackapps",
+      "url": "https://stackapps.com"
+    },
+    "User Experience": {
+      "name": "ux",
+      "url": "https://ux.stackexchange.com"
+    },
+    "User Experience Meta": {
+      "name": "ux.meta",
+      "url": "https://ux.meta.stackexchange.com"
+    },
+    "Unix & Linux Stack Exchange": {
+      "name": "unix",
+      "url": "https://unix.stackexchange.com"
+    },
+    "Unix & Linux Meta": {
+      "name": "unix.meta",
+      "url": "https://unix.meta.stackexchange.com"
+    },
+    "WordPress Development": {
+      "name": "wordpress",
+      "url": "https://wordpress.stackexchange.com"
+    },
+    "WordPress Development Meta": {
+      "name": "wordpress.meta",
+      "url": "https://wordpress.meta.stackexchange.com"
+    },
+    "Theoretical Computer Science": {
+      "name": "cstheory",
+      "url": "https://cstheory.stackexchange.com"
+    },
+    "Theoretical Computer Science Meta": {
+      "name": "cstheory.meta",
+      "url": "https://cstheory.meta.stackexchange.com"
+    },
+    "Ask Different": {
+      "name": "apple",
+      "url": "https://apple.stackexchange.com"
+    },
+    "Ask Different Meta": {
+      "name": "apple.meta",
+      "url": "https://apple.meta.stackexchange.com"
+    },
+    "Role-playing Games": {
+      "name": "rpg",
+      "url": "https://rpg.stackexchange.com"
+    },
+    "Role-playing Games Meta": {
+      "name": "rpg.meta",
+      "url": "https://rpg.meta.stackexchange.com"
+    },
+    "Bicycles": {
+      "name": "bicycles",
+      "url": "https://bicycles.stackexchange.com"
+    },
+    "Bicycles Meta": {
+      "name": "bicycles.meta",
+      "url": "https://bicycles.meta.stackexchange.com"
+    },
+    "Software Engineering Stack Exchange": {
+      "name": "softwareengineering",
+      "url": "https://softwareengineering.stackexchange.com"
+    },
+    "Software Engineering Meta": {
+      "name": "softwareengineering.meta",
+      "url": "https://softwareengineering.meta.stackexchange.com"
+    },
+    "Electrical Engineering": {
+      "name": "electronics",
+      "url": "https://electronics.stackexchange.com"
+    },
+    "Electrical Engineering Meta": {
+      "name": "electronics.meta",
+      "url": "https://electronics.meta.stackexchange.com"
+    },
+    "Android Enthusiasts": {
+      "name": "android",
+      "url": "https://android.stackexchange.com"
+    },
+    "Android Enthusiasts Meta": {
+      "name": "android.meta",
+      "url": "https://android.meta.stackexchange.com"
+    },
+    "Board & Card Games": {
+      "name": "boardgames",
+      "url": "https://boardgames.stackexchange.com"
+    },
+    "Board & Card Games Meta": {
+      "name": "boardgames.meta",
+      "url": "https://boardgames.meta.stackexchange.com"
+    },
+    "Physics": {
+      "name": "physics",
+      "url": "https://physics.stackexchange.com"
+    },
+    "Physics Meta": {
+      "name": "physics.meta",
+      "url": "https://physics.meta.stackexchange.com"
+    },
+    "Homebrewing": {
+      "name": "homebrew",
+      "url": "https://homebrew.stackexchange.com"
+    },
+    "Homebrewing Meta": {
+      "name": "homebrew.meta",
+      "url": "https://homebrew.meta.stackexchange.com"
+    },
+    "Information Security Stack Exchange": {
+      "name": "security",
+      "url": "https://security.stackexchange.com"
+    },
+    "Information Security Meta": {
+      "name": "security.meta",
+      "url": "https://security.meta.stackexchange.com"
+    },
+    "Writing": {
+      "name": "writing",
+      "url": "https://writing.stackexchange.com"
+    },
+    "Writing Meta": {
+      "name": "writing.meta",
+      "url": "https://writing.meta.stackexchange.com"
+    },
+    "Video Production": {
+      "name": "video",
+      "url": "https://video.stackexchange.com"
+    },
+    "Video Production Meta": {
+      "name": "video.meta",
+      "url": "https://video.meta.stackexchange.com"
+    },
+    "Graphic Design": {
+      "name": "graphicdesign",
+      "url": "https://graphicdesign.stackexchange.com"
+    },
+    "Graphic Design Meta": {
+      "name": "graphicdesign.meta",
+      "url": "https://graphicdesign.meta.stackexchange.com"
+    },
+    "Database Administrators": {
+      "name": "dba",
+      "url": "https://dba.stackexchange.com"
+    },
+    "Database Administrators Meta": {
+      "name": "dba.meta",
+      "url": "https://dba.meta.stackexchange.com"
+    },
+    "Science Fiction & Fantasy": {
+      "name": "scifi",
+      "url": "https://scifi.stackexchange.com"
+    },
+    "Science Fiction & Fantasy Meta": {
+      "name": "scifi.meta",
+      "url": "https://scifi.meta.stackexchange.com"
+    },
+    "Code Review Stack Exchange": {
+      "name": "codereview",
+      "url": "https://codereview.stackexchange.com"
+    },
+    "Code Review Meta": {
+      "name": "codereview.meta",
+      "url": "https://codereview.meta.stackexchange.com"
+    },
+    "Code Golf": {
+      "name": "codegolf",
+      "url": "https://codegolf.stackexchange.com"
+    },
+    "Code Golf Meta": {
+      "name": "codegolf.meta",
+      "url": "https://codegolf.meta.stackexchange.com"
+    },
+    "Quantitative Finance": {
+      "name": "quant",
+      "url": "https://quant.stackexchange.com"
+    },
+    "Quantitative Finance Meta": {
+      "name": "quant.meta",
+      "url": "https://quant.meta.stackexchange.com"
+    },
+    "Project Management": {
+      "name": "pm",
+      "url": "https://pm.stackexchange.com"
+    },
+    "Project Management Meta": {
+      "name": "pm.meta",
+      "url": "https://pm.meta.stackexchange.com"
+    },
+    "Skeptics": {
+      "name": "skeptics",
+      "url": "https://skeptics.stackexchange.com"
+    },
+    "Skeptics Meta": {
+      "name": "skeptics.meta",
+      "url": "https://skeptics.meta.stackexchange.com"
+    },
+    "Physical Fitness": {
+      "name": "fitness",
+      "url": "https://fitness.stackexchange.com"
+    },
+    "Physical Fitness Meta": {
+      "name": "fitness.meta",
+      "url": "https://fitness.meta.stackexchange.com"
+    },
+    "Drupal Answers": {
+      "name": "drupal",
+      "url": "https://drupal.stackexchange.com"
+    },
+    "Drupal Answers Meta": {
+      "name": "drupal.meta",
+      "url": "https://drupal.meta.stackexchange.com"
+    },
+    "Motor Vehicle Maintenance & Repair": {
+      "name": "mechanics",
+      "url": "https://mechanics.stackexchange.com"
+    },
+    "Motor Vehicle Maintenance & Repair Meta": {
+      "name": "mechanics.meta",
+      "url": "https://mechanics.meta.stackexchange.com"
+    },
+    "Parenting": {
+      "name": "parenting",
+      "url": "https://parenting.stackexchange.com"
+    },
+    "Parenting Meta": {
+      "name": "parenting.meta",
+      "url": "https://parenting.meta.stackexchange.com"
+    },
+    "SharePoint": {
+      "name": "sharepoint",
+      "url": "https://sharepoint.stackexchange.com"
+    },
+    "SharePoint Meta": {
+      "name": "sharepoint.meta",
+      "url": "https://sharepoint.meta.stackexchange.com"
+    },
+    "Music: Practice & Theory": {
+      "name": "music",
+      "url": "https://music.stackexchange.com"
+    },
+    "Music: Practice & Theory Meta": {
+      "name": "music.meta",
+      "url": "https://music.meta.stackexchange.com"
+    },
+    "Software Quality Assurance & Testing": {
+      "name": "sqa",
+      "url": "https://sqa.stackexchange.com"
+    },
+    "Software Quality Assurance & Testing Meta": {
+      "name": "sqa.meta",
+      "url": "https://sqa.meta.stackexchange.com"
+    },
+    "Mi Yodeya": {
+      "name": "judaism",
+      "url": "https://judaism.stackexchange.com"
+    },
+    "Mi Yodeya Meta": {
+      "name": "judaism.meta",
+      "url": "https://judaism.meta.stackexchange.com"
+    },
+    "German Language": {
+      "name": "german",
+      "url": "https://german.stackexchange.com"
+    },
+    "German Language Meta": {
+      "name": "german.meta",
+      "url": "https://german.meta.stackexchange.com"
+    },
+    "Japanese Language": {
+      "name": "japanese",
+      "url": "https://japanese.stackexchange.com"
+    },
+    "Japanese Language Meta": {
+      "name": "japanese.meta",
+      "url": "https://japanese.meta.stackexchange.com"
+    },
+    "Philosophy": {
+      "name": "philosophy",
+      "url": "https://philosophy.stackexchange.com"
+    },
+    "Philosophy Meta": {
+      "name": "philosophy.meta",
+      "url": "https://philosophy.meta.stackexchange.com"
+    },
+    "Gardening & Landscaping": {
+      "name": "gardening",
+      "url": "https://gardening.stackexchange.com"
+    },
+    "Gardening & Landscaping Meta": {
+      "name": "gardening.meta",
+      "url": "https://gardening.meta.stackexchange.com"
+    },
+    "Travel": {
+      "name": "travel",
+      "url": "https://travel.stackexchange.com"
+    },
+    "Travel Meta": {
+      "name": "travel.meta",
+      "url": "https://travel.meta.stackexchange.com"
+    },
+    "Cryptography Stack Exchange": {
+      "name": "crypto",
+      "url": "https://crypto.stackexchange.com"
+    },
+    "Cryptography Meta": {
+      "name": "crypto.meta",
+      "url": "https://crypto.meta.stackexchange.com"
+    },
+    "Signal Processing": {
+      "name": "dsp",
+      "url": "https://dsp.stackexchange.com"
+    },
+    "Signal Processing Meta": {
+      "name": "dsp.meta",
+      "url": "https://dsp.meta.stackexchange.com"
+    },
+    "French Language": {
+      "name": "french",
+      "url": "https://french.stackexchange.com"
+    },
+    "French Language Meta": {
+      "name": "french.meta",
+      "url": "https://french.meta.stackexchange.com"
+    },
+    "Christianity": {
+      "name": "christianity",
+      "url": "https://christianity.stackexchange.com"
+    },
+    "Christianity Meta": {
+      "name": "christianity.meta",
+      "url": "https://christianity.meta.stackexchange.com"
+    },
+    "Bitcoin": {
+      "name": "bitcoin",
+      "url": "https://bitcoin.stackexchange.com"
+    },
+    "Bitcoin Meta": {
+      "name": "bitcoin.meta",
+      "url": "https://bitcoin.meta.stackexchange.com"
+    },
+    "Linguistics": {
+      "name": "linguistics",
+      "url": "https://linguistics.stackexchange.com"
+    },
+    "Linguistics Meta": {
+      "name": "linguistics.meta",
+      "url": "https://linguistics.meta.stackexchange.com"
+    },
+    "Biblical Hermeneutics": {
+      "name": "hermeneutics",
+      "url": "https://hermeneutics.stackexchange.com"
+    },
+    "Biblical Hermeneutics Meta": {
+      "name": "hermeneutics.meta",
+      "url": "https://hermeneutics.meta.stackexchange.com"
+    },
+    "History": {
+      "name": "history",
+      "url": "https://history.stackexchange.com"
+    },
+    "History Meta": {
+      "name": "history.meta",
+      "url": "https://history.meta.stackexchange.com"
+    },
+    "Bricks": {
+      "name": "bricks",
+      "url": "https://bricks.stackexchange.com"
+    },
+    "Bricks Meta": {
+      "name": "bricks.meta",
+      "url": "https://bricks.meta.stackexchange.com"
+    },
+    "Spanish Language": {
+      "name": "spanish",
+      "url": "https://spanish.stackexchange.com"
+    },
+    "Spanish Language Meta": {
+      "name": "spanish.meta",
+      "url": "https://spanish.meta.stackexchange.com"
+    },
+    "Computational Science": {
+      "name": "scicomp",
+      "url": "https://scicomp.stackexchange.com"
+    },
+    "Computational Science Meta": {
+      "name": "scicomp.meta",
+      "url": "https://scicomp.meta.stackexchange.com"
+    },
+    "Movies & TV": {
+      "name": "movies",
+      "url": "https://movies.stackexchange.com"
+    },
+    "Movies & TV Meta": {
+      "name": "movies.meta",
+      "url": "https://movies.meta.stackexchange.com"
+    },
+    "Chinese Language": {
+      "name": "chinese",
+      "url": "https://chinese.stackexchange.com"
+    },
+    "Chinese Language Meta": {
+      "name": "chinese.meta",
+      "url": "https://chinese.meta.stackexchange.com"
+    },
+    "Biology": {
+      "name": "biology",
+      "url": "https://biology.stackexchange.com"
+    },
+    "Biology Meta": {
+      "name": "biology.meta",
+      "url": "https://biology.meta.stackexchange.com"
+    },
+    "Poker": {
+      "name": "poker",
+      "url": "https://poker.stackexchange.com"
+    },
+    "Poker Meta": {
+      "name": "poker.meta",
+      "url": "https://poker.meta.stackexchange.com"
+    },
+    "Mathematica": {
+      "name": "mathematica",
+      "url": "https://mathematica.stackexchange.com"
+    },
+    "Mathematica Meta": {
+      "name": "mathematica.meta",
+      "url": "https://mathematica.meta.stackexchange.com"
+    },
+    "Psychology & Neuroscience": {
+      "name": "psychology",
+      "url": "https://psychology.stackexchange.com"
+    },
+    "Psychology & Neuroscience Meta": {
+      "name": "psychology.meta",
+      "url": "https://psychology.meta.stackexchange.com"
+    },
+    "The Great Outdoors": {
+      "name": "outdoors",
+      "url": "https://outdoors.stackexchange.com"
+    },
+    "The Great Outdoors Meta": {
+      "name": "outdoors.meta",
+      "url": "https://outdoors.meta.stackexchange.com"
+    },
+    "Martial Arts": {
+      "name": "martialarts",
+      "url": "https://martialarts.stackexchange.com"
+    },
+    "Martial Arts Meta": {
+      "name": "martialarts.meta",
+      "url": "https://martialarts.meta.stackexchange.com"
+    },
+    "Sports": {
+      "name": "sports",
+      "url": "https://sports.stackexchange.com"
+    },
+    "Sports Meta": {
+      "name": "sports.meta",
+      "url": "https://sports.meta.stackexchange.com"
+    },
+    "Academia": {
+      "name": "academia",
+      "url": "https://academia.stackexchange.com"
+    },
+    "Academia Meta": {
+      "name": "academia.meta",
+      "url": "https://academia.meta.stackexchange.com"
+    },
+    "Computer Science": {
+      "name": "cs",
+      "url": "https://cs.stackexchange.com"
+    },
+    "Computer Science Meta": {
+      "name": "cs.meta",
+      "url": "https://cs.meta.stackexchange.com"
+    },
+    "The Workplace": {
+      "name": "workplace",
+      "url": "https://workplace.stackexchange.com"
+    },
+    "The Workplace Meta": {
+      "name": "workplace.meta",
+      "url": "https://workplace.meta.stackexchange.com"
+    },
+    "Windows Phone": {
+      "name": "windowsphone",
+      "url": "https://windowsphone.stackexchange.com"
+    },
+    "Windows Phone Meta": {
+      "name": "windowsphone.meta",
+      "url": "https://windowsphone.meta.stackexchange.com"
+    },
+    "Chemistry": {
+      "name": "chemistry",
+      "url": "https://chemistry.stackexchange.com"
+    },
+    "Chemistry Meta": {
+      "name": "chemistry.meta",
+      "url": "https://chemistry.meta.stackexchange.com"
+    },
+    "Chess": {
+      "name": "chess",
+      "url": "https://chess.stackexchange.com"
+    },
+    "Chess Meta": {
+      "name": "chess.meta",
+      "url": "https://chess.meta.stackexchange.com"
+    },
+    "Raspberry Pi Stack Exchange": {
+      "name": "raspberrypi",
+      "url": "https://raspberrypi.stackexchange.com"
+    },
+    "Raspberry Pi Meta": {
+      "name": "raspberrypi.meta",
+      "url": "https://raspberrypi.meta.stackexchange.com"
+    },
+    "Russian Language": {
+      "name": "russian",
+      "url": "https://russian.stackexchange.com"
+    },
+    "Russian Language Meta": {
+      "name": "russian.meta",
+      "url": "https://russian.meta.stackexchange.com"
+    },
+    "Islam": {
+      "name": "islam",
+      "url": "https://islam.stackexchange.com"
+    },
+    "Islam Meta": {
+      "name": "islam.meta",
+      "url": "https://islam.meta.stackexchange.com"
+    },
+    "Salesforce": {
+      "name": "salesforce",
+      "url": "https://salesforce.stackexchange.com"
+    },
+    "Salesforce Meta": {
+      "name": "salesforce.meta",
+      "url": "https://salesforce.meta.stackexchange.com"
+    },
+    "Ask Patents": {
+      "name": "patents",
+      "url": "https://patents.stackexchange.com"
+    },
+    "Ask Patents Meta": {
+      "name": "patents.meta",
+      "url": "https://patents.meta.stackexchange.com"
+    },
+    "Genealogy & Family History": {
+      "name": "genealogy",
+      "url": "https://genealogy.stackexchange.com"
+    },
+    "Genealogy & Family History Meta": {
+      "name": "genealogy.meta",
+      "url": "https://genealogy.meta.stackexchange.com"
+    },
+    "Robotics": {
+      "name": "robotics",
+      "url": "https://robotics.stackexchange.com"
+    },
+    "Robotics Meta": {
+      "name": "robotics.meta",
+      "url": "https://robotics.meta.stackexchange.com"
+    },
+    "ExpressionEngine&#174; Answers": {
+      "name": "expressionengine",
+      "url": "https://expressionengine.stackexchange.com"
+    },
+    "ExpressionEngine&#174; Answers Meta": {
+      "name": "expressionengine.meta",
+      "url": "https://expressionengine.meta.stackexchange.com"
+    },
+    "Politics": {
+      "name": "politics",
+      "url": "https://politics.stackexchange.com"
+    },
+    "Politics Meta": {
+      "name": "politics.meta",
+      "url": "https://politics.meta.stackexchange.com"
+    },
+    "Anime & Manga": {
+      "name": "anime",
+      "url": "https://anime.stackexchange.com"
+    },
+    "Anime & Manga Meta": {
+      "name": "anime.meta",
+      "url": "https://anime.meta.stackexchange.com"
+    },
+    "Magento": {
+      "name": "magento",
+      "url": "https://magento.stackexchange.com"
+    },
+    "Magento Meta": {
+      "name": "magento.meta",
+      "url": "https://magento.meta.stackexchange.com"
+    },
+    "English Language Learners": {
+      "name": "ell",
+      "url": "https://ell.stackexchange.com"
+    },
+    "English Language Learners Meta": {
+      "name": "ell.meta",
+      "url": "https://ell.meta.stackexchange.com"
+    },
+    "Sustainable Living": {
+      "name": "sustainability",
+      "url": "https://sustainability.stackexchange.com"
+    },
+    "Sustainable Living Meta": {
+      "name": "sustainability.meta",
+      "url": "https://sustainability.meta.stackexchange.com"
+    },
+    "Tridion": {
+      "name": "tridion",
+      "url": "https://tridion.stackexchange.com"
+    },
+    "Tridion Meta": {
+      "name": "tridion.meta",
+      "url": "https://tridion.meta.stackexchange.com"
+    },
+    "Reverse Engineering Stack Exchange": {
+      "name": "reverseengineering",
+      "url": "https://reverseengineering.stackexchange.com"
+    },
+    "Reverse Engineering Meta": {
+      "name": "reverseengineering.meta",
+      "url": "https://reverseengineering.meta.stackexchange.com"
+    },
+    "Network Engineering": {
+      "name": "networkengineering",
+      "url": "https://networkengineering.stackexchange.com"
+    },
+    "Network Engineering Meta": {
+      "name": "networkengineering.meta",
+      "url": "https://networkengineering.meta.stackexchange.com"
+    },
+    "Open Data": {
+      "name": "opendata",
+      "url": "https://opendata.stackexchange.com"
+    },
+    "Open Data Meta": {
+      "name": "opendata.meta",
+      "url": "https://opendata.meta.stackexchange.com"
+    },
+    "Freelancing": {
+      "name": "freelancing",
+      "url": "https://freelancing.stackexchange.com"
+    },
+    "Freelancing Meta": {
+      "name": "freelancing.meta",
+      "url": "https://freelancing.meta.stackexchange.com"
+    },
+    "Blender": {
+      "name": "blender",
+      "url": "https://blender.stackexchange.com"
+    },
+    "Blender Meta": {
+      "name": "blender.meta",
+      "url": "https://blender.meta.stackexchange.com"
+    },
+    "MathOverflow": {
+      "name": "mathoverflow.net",
+      "url": "https://mathoverflow.net"
+    },
+    "MathOverflow Meta": {
+      "name": "meta.mathoverflow.net",
+      "url": "https://meta.mathoverflow.net"
+    },
+    "Space Exploration": {
+      "name": "space",
+      "url": "https://space.stackexchange.com"
+    },
+    "Space Exploration Meta": {
+      "name": "space.meta",
+      "url": "https://space.meta.stackexchange.com"
+    },
+    "Sound Design": {
+      "name": "sound",
+      "url": "https://sound.stackexchange.com"
+    },
+    "Sound Design Meta": {
+      "name": "sound.meta",
+      "url": "https://sound.meta.stackexchange.com"
+    },
+    "Astronomy": {
+      "name": "astronomy",
+      "url": "https://astronomy.stackexchange.com"
+    },
+    "Astronomy Meta": {
+      "name": "astronomy.meta",
+      "url": "https://astronomy.meta.stackexchange.com"
+    },
+    "Tor Stack Exchange": {
+      "name": "tor",
+      "url": "https://tor.stackexchange.com"
+    },
+    "Tor Meta": {
+      "name": "tor.meta",
+      "url": "https://tor.meta.stackexchange.com"
+    },
+    "Pets": {
+      "name": "pets",
+      "url": "https://pets.stackexchange.com"
+    },
+    "Pets Meta": {
+      "name": "pets.meta",
+      "url": "https://pets.meta.stackexchange.com"
+    },
+    "Amateur Radio": {
+      "name": "ham",
+      "url": "https://ham.stackexchange.com"
+    },
+    "Amateur Radio Meta": {
+      "name": "ham.meta",
+      "url": "https://ham.meta.stackexchange.com"
+    },
+    "Italian Language": {
+      "name": "italian",
+      "url": "https://italian.stackexchange.com"
+    },
+    "Italian Language Meta": {
+      "name": "italian.meta",
+      "url": "https://italian.meta.stackexchange.com"
+    },
+    "Stack Overflow em Portugu&#234;s": {
+      "name": "pt.stackoverflow",
+      "url": "https://pt.stackoverflow.com"
+    },
+    "Stack Overflow em Portugu&#234;s Meta": {
+      "name": "pt.meta.stackoverflow",
+      "url": "https://pt.meta.stackoverflow.com"
+    },
+    "Aviation": {
+      "name": "aviation",
+      "url": "https://aviation.stackexchange.com"
+    },
+    "Aviation Meta": {
+      "name": "aviation.meta",
+      "url": "https://aviation.meta.stackexchange.com"
+    },
+    "Ebooks": {
+      "name": "ebooks",
+      "url": "https://ebooks.stackexchange.com"
+    },
+    "Ebooks Meta": {
+      "name": "ebooks.meta",
+      "url": "https://ebooks.meta.stackexchange.com"
+    },
+    "Beer, Wine & Spirits": {
+      "name": "alcohol",
+      "url": "https://alcohol.stackexchange.com"
+    },
+    "Beer, Wine & Spirits Meta": {
+      "name": "alcohol.meta",
+      "url": "https://alcohol.meta.stackexchange.com"
+    },
+    "Software Recommendations": {
+      "name": "softwarerecs",
+      "url": "https://softwarerecs.stackexchange.com"
+    },
+    "Software Recommendations Meta": {
+      "name": "softwarerecs.meta",
+      "url": "https://softwarerecs.meta.stackexchange.com"
+    },
+    "Arduino": {
+      "name": "arduino",
+      "url": "https://arduino.stackexchange.com"
+    },
+    "Arduino Meta": {
+      "name": "arduino.meta",
+      "url": "https://arduino.meta.stackexchange.com"
+    },
+    "CS50": {
+      "name": "cs50",
+      "url": "https://cs50.stackexchange.com"
+    },
+    "CS50 Meta": {
+      "name": "cs50.meta",
+      "url": "https://cs50.meta.stackexchange.com"
+    },
+    "Expatriates": {
+      "name": "expatriates",
+      "url": "https://expatriates.stackexchange.com"
+    },
+    "Expatriates Meta": {
+      "name": "expatriates.meta",
+      "url": "https://expatriates.meta.stackexchange.com"
+    },
+    "Mathematics Educators": {
+      "name": "matheducators",
+      "url": "https://matheducators.stackexchange.com"
+    },
+    "Mathematics Educators Meta": {
+      "name": "matheducators.meta",
+      "url": "https://matheducators.meta.stackexchange.com"
+    },
+    "Meta Stack Overflow": {
+      "name": "meta.stackoverflow",
+      "url": "https://meta.stackoverflow.com"
+    },
+    "Earth Science": {
+      "name": "earthscience",
+      "url": "https://earthscience.stackexchange.com"
+    },
+    "Earth Science Meta": {
+      "name": "earthscience.meta",
+      "url": "https://earthscience.meta.stackexchange.com"
+    },
+    "Joomla": {
+      "name": "joomla",
+      "url": "https://joomla.stackexchange.com"
+    },
+    "Joomla Meta": {
+      "name": "joomla.meta",
+      "url": "https://joomla.meta.stackexchange.com"
+    },
+    "Data Science": {
+      "name": "datascience",
+      "url": "https://datascience.stackexchange.com"
+    },
+    "Data Science Meta": {
+      "name": "datascience.meta",
+      "url": "https://datascience.meta.stackexchange.com"
+    },
+    "Puzzling": {
+      "name": "puzzling",
+      "url": "https://puzzling.stackexchange.com"
+    },
+    "Puzzling Meta": {
+      "name": "puzzling.meta",
+      "url": "https://puzzling.meta.stackexchange.com"
+    },
+    "Craft CMS": {
+      "name": "craftcms",
+      "url": "https://craftcms.stackexchange.com"
+    },
+    "Craft CMS Meta": {
+      "name": "craftcms.meta",
+      "url": "https://craftcms.meta.stackexchange.com"
+    },
+    "Buddhism": {
+      "name": "buddhism",
+      "url": "https://buddhism.stackexchange.com"
+    },
+    "Buddhism Meta": {
+      "name": "buddhism.meta",
+      "url": "https://buddhism.meta.stackexchange.com"
+    },
+    "Hinduism": {
+      "name": "hinduism",
+      "url": "https://hinduism.stackexchange.com"
+    },
+    "Hinduism Meta": {
+      "name": "hinduism.meta",
+      "url": "https://hinduism.meta.stackexchange.com"
+    },
+    "Community Building": {
+      "name": "communitybuilding",
+      "url": "https://communitybuilding.stackexchange.com"
+    },
+    "Community Building Meta": {
+      "name": "communitybuilding.meta",
+      "url": "https://communitybuilding.meta.stackexchange.com"
+    },
+    "Worldbuilding": {
+      "name": "worldbuilding",
+      "url": "https://worldbuilding.stackexchange.com"
+    },
+    "Worldbuilding Meta": {
+      "name": "worldbuilding.meta",
+      "url": "https://worldbuilding.meta.stackexchange.com"
+    },
+    "????????????": {
+      "name": "ja.stackoverflow",
+      "url": "https://ja.stackoverflow.com"
+    },
+    "????????????Meta": {
+      "name": "ja.meta.stackoverflow",
+      "url": "https://ja.meta.stackoverflow.com"
+    },
+    "Emacs": {
+      "name": "emacs",
+      "url": "https://emacs.stackexchange.com"
+    },
+    "Emacs Meta": {
+      "name": "emacs.meta",
+      "url": "https://emacs.meta.stackexchange.com"
+    },
+    "History of Science and Mathematics": {
+      "name": "hsm",
+      "url": "https://hsm.stackexchange.com"
+    },
+    "History of Science and Mathematics Meta": {
+      "name": "hsm.meta",
+      "url": "https://hsm.meta.stackexchange.com"
+    },
+    "Economics": {
+      "name": "economics",
+      "url": "https://economics.stackexchange.com"
+    },
+    "Economics Meta": {
+      "name": "economics.meta",
+      "url": "https://economics.meta.stackexchange.com"
+    },
+    "Lifehacks": {
+      "name": "lifehacks",
+      "url": "https://lifehacks.stackexchange.com"
+    },
+    "Lifehacks Meta": {
+      "name": "lifehacks.meta",
+      "url": "https://lifehacks.meta.stackexchange.com"
+    },
+    "Engineering": {
+      "name": "engineering",
+      "url": "https://engineering.stackexchange.com"
+    },
+    "Engineering Meta": {
+      "name": "engineering.meta",
+      "url": "https://engineering.meta.stackexchange.com"
+    },
+    "Coffee": {
+      "name": "coffee",
+      "url": "https://coffee.stackexchange.com"
+    },
+    "Coffee Meta": {
+      "name": "coffee.meta",
+      "url": "https://coffee.meta.stackexchange.com"
+    },
+    "Vi and Vim Stack Exchange": {
+      "name": "vi",
+      "url": "https://vi.stackexchange.com"
+    },
+    "Vi and Vim Meta": {
+      "name": "vi.meta",
+      "url": "https://vi.meta.stackexchange.com"
+    },
+    "Music Fans": {
+      "name": "musicfans",
+      "url": "https://musicfans.stackexchange.com"
+    },
+    "Music Fans Meta": {
+      "name": "musicfans.meta",
+      "url": "https://musicfans.meta.stackexchange.com"
+    },
+    "Woodworking": {
+      "name": "woodworking",
+      "url": "https://woodworking.stackexchange.com"
+    },
+    "Woodworking Meta": {
+      "name": "woodworking.meta",
+      "url": "https://woodworking.meta.stackexchange.com"
+    },
+    "CiviCRM": {
+      "name": "civicrm",
+      "url": "https://civicrm.stackexchange.com"
+    },
+    "CiviCRM Meta": {
+      "name": "civicrm.meta",
+      "url": "https://civicrm.meta.stackexchange.com"
+    },
+    "Medical Sciences": {
+      "name": "medicalsciences",
+      "url": "https://medicalsciences.stackexchange.com"
+    },
+    "Medical Sciences Meta": {
+      "name": "medicalsciences.meta",
+      "url": "https://medicalsciences.meta.stackexchange.com"
+    },
+    "Stack Overflow ?? ???????": {
+      "name": "ru.stackoverflow",
+      "url": "https://ru.stackoverflow.com"
+    },
+    "Stack Overflow ?? ??????? Meta": {
+      "name": "ru.meta.stackoverflow",
+      "url": "https://ru.meta.stackoverflow.com"
+    },
+    "??????? ????": {
+      "name": "rus",
+      "url": "https://rus.stackexchange.com"
+    },
+    "??????? ???? Meta": {
+      "name": "rus.meta",
+      "url": "https://rus.meta.stackexchange.com"
+    },
+    "Mythology & Folklore": {
+      "name": "mythology",
+      "url": "https://mythology.stackexchange.com"
+    },
+    "Mythology & Folklore Meta": {
+      "name": "mythology.meta",
+      "url": "https://mythology.meta.stackexchange.com"
+    },
+    "Law": {
+      "name": "law",
+      "url": "https://law.stackexchange.com"
+    },
+    "Law Meta": {
+      "name": "law.meta",
+      "url": "https://law.meta.stackexchange.com"
+    },
+    "Open Source": {
+      "name": "opensource",
+      "url": "https://opensource.stackexchange.com"
+    },
+    "Open Source Meta": {
+      "name": "opensource.meta",
+      "url": "https://opensource.meta.stackexchange.com"
+    },
+    "elementary OS Stack Exchange": {
+      "name": "elementaryos",
+      "url": "https://elementaryos.stackexchange.com"
+    },
+    "elementary OS Meta": {
+      "name": "elementaryos.meta",
+      "url": "https://elementaryos.meta.stackexchange.com"
+    },
+    "Portuguese Language": {
+      "name": "portuguese",
+      "url": "https://portuguese.stackexchange.com"
+    },
+    "Portuguese Language Meta": {
+      "name": "portuguese.meta",
+      "url": "https://portuguese.meta.stackexchange.com"
+    },
+    "Computer Graphics": {
+      "name": "computergraphics",
+      "url": "https://computergraphics.stackexchange.com"
+    },
+    "Computer Graphics Meta": {
+      "name": "computergraphics.meta",
+      "url": "https://computergraphics.meta.stackexchange.com"
+    },
+    "Hardware Recommendations": {
+      "name": "hardwarerecs",
+      "url": "https://hardwarerecs.stackexchange.com"
+    },
+    "Hardware Recommendations Meta": {
+      "name": "hardwarerecs.meta",
+      "url": "https://hardwarerecs.meta.stackexchange.com"
+    },
+    "Stack Overflow en espa&#241;ol": {
+      "name": "es.stackoverflow",
+      "url": "https://es.stackoverflow.com"
+    },
+    "Stack Overflow Meta en espa&#241;ol": {
+      "name": "es.meta.stackoverflow",
+      "url": "https://es.meta.stackoverflow.com"
+    },
+    "3D Printing": {
+      "name": "3dprinting",
+      "url": "https://3dprinting.stackexchange.com"
+    },
+    "3D Printing Meta": {
+      "name": "3dprinting.meta",
+      "url": "https://3dprinting.meta.stackexchange.com"
+    },
+    "Ethereum": {
+      "name": "ethereum",
+      "url": "https://ethereum.stackexchange.com"
+    },
+    "Ethereum Meta": {
+      "name": "ethereum.meta",
+      "url": "https://ethereum.meta.stackexchange.com"
+    },
+    "Latin Language": {
+      "name": "latin",
+      "url": "https://latin.stackexchange.com"
+    },
+    "Latin Language Meta": {
+      "name": "latin.meta",
+      "url": "https://latin.meta.stackexchange.com"
+    },
+    "Language Learning": {
+      "name": "languagelearning",
+      "url": "https://languagelearning.stackexchange.com"
+    },
+    "Language Learning Meta": {
+      "name": "languagelearning.meta",
+      "url": "https://languagelearning.meta.stackexchange.com"
+    },
+    "Retrocomputing": {
+      "name": "retrocomputing",
+      "url": "https://retrocomputing.stackexchange.com"
+    },
+    "Retrocomputing Meta": {
+      "name": "retrocomputing.meta",
+      "url": "https://retrocomputing.meta.stackexchange.com"
+    },
+    "Arts & Crafts": {
+      "name": "crafts",
+      "url": "https://crafts.stackexchange.com"
+    },
+    "Arts & Crafts Meta": {
+      "name": "crafts.meta",
+      "url": "https://crafts.meta.stackexchange.com"
+    },
+    "Korean Language": {
+      "name": "korean",
+      "url": "https://korean.stackexchange.com"
+    },
+    "Korean Language Meta": {
+      "name": "korean.meta",
+      "url": "https://korean.meta.stackexchange.com"
+    },
+    "Monero": {
+      "name": "monero",
+      "url": "https://monero.stackexchange.com"
+    },
+    "Monero Meta": {
+      "name": "monero.meta",
+      "url": "https://monero.meta.stackexchange.com"
+    },
+    "Artificial Intelligence": {
+      "name": "ai",
+      "url": "https://ai.stackexchange.com"
+    },
+    "Artificial Intelligence Meta": {
+      "name": "ai.meta",
+      "url": "https://ai.meta.stackexchange.com"
+    },
+    "Esperanto Language": {
+      "name": "esperanto",
+      "url": "https://esperanto.stackexchange.com"
+    },
+    "Esperanto Language Meta": {
+      "name": "esperanto.meta",
+      "url": "https://esperanto.meta.stackexchange.com"
+    },
+    "Sitecore": {
+      "name": "sitecore",
+      "url": "https://sitecore.stackexchange.com"
+    },
+    "Sitecore Meta": {
+      "name": "sitecore.meta",
+      "url": "https://sitecore.meta.stackexchange.com"
+    },
+    "Internet of Things Stack Exchange": {
+      "name": "iot",
+      "url": "https://iot.stackexchange.com"
+    },
+    "Internet of Things Meta": {
+      "name": "iot.meta",
+      "url": "https://iot.meta.stackexchange.com"
+    },
+    "Literature": {
+      "name": "literature",
+      "url": "https://literature.stackexchange.com"
+    },
+    "Literature Meta": {
+      "name": "literature.meta",
+      "url": "https://literature.meta.stackexchange.com"
+    },
+    "Veganism & Vegetarianism": {
+      "name": "vegetarianism",
+      "url": "https://vegetarianism.stackexchange.com"
+    },
+    "Veganism & Vegetarianism Meta": {
+      "name": "vegetarianism.meta",
+      "url": "https://vegetarianism.meta.stackexchange.com"
+    },
+    "Ukrainian Language": {
+      "name": "ukrainian",
+      "url": "https://ukrainian.stackexchange.com"
+    },
+    "Ukrainian Language Meta": {
+      "name": "ukrainian.meta",
+      "url": "https://ukrainian.meta.stackexchange.com"
+    },
+    "DevOps": {
+      "name": "devops",
+      "url": "https://devops.stackexchange.com"
+    },
+    "DevOps Meta": {
+      "name": "devops.meta",
+      "url": "https://devops.meta.stackexchange.com"
+    },
+    "Bioinformatics": {
+      "name": "bioinformatics",
+      "url": "https://bioinformatics.stackexchange.com"
+    },
+    "Bioinformatics Meta": {
+      "name": "bioinformatics.meta",
+      "url": "https://bioinformatics.meta.stackexchange.com"
+    },
+    "Computer Science Educators": {
+      "name": "cseducators",
+      "url": "https://cseducators.stackexchange.com"
+    },
+    "Computer Science Educators Meta": {
+      "name": "cseducators.meta",
+      "url": "https://cseducators.meta.stackexchange.com"
+    },
+    "Interpersonal Skills": {
+      "name": "interpersonal",
+      "url": "https://interpersonal.stackexchange.com"
+    },
+    "Interpersonal Skills Meta": {
+      "name": "interpersonal.meta",
+      "url": "https://interpersonal.meta.stackexchange.com"
+    },
+    "Iota": {
+      "name": "iota",
+      "url": "https://iota.stackexchange.com"
+    },
+    "Iota Meta": {
+      "name": "iota.meta",
+      "url": "https://iota.meta.stackexchange.com"
+    },
+    "Stellar": {
+      "name": "stellar",
+      "url": "https://stellar.stackexchange.com"
+    },
+    "Stellar Meta": {
+      "name": "stellar.meta",
+      "url": "https://stellar.meta.stackexchange.com"
+    },
+    "Constructed Languages": {
+      "name": "conlang",
+      "url": "https://conlang.stackexchange.com"
+    },
+    "Constructed Languages Meta": {
+      "name": "conlang.meta",
+      "url": "https://conlang.meta.stackexchange.com"
+    },
+    "Quantum Computing Stack Exchange": {
+      "name": "quantumcomputing",
+      "url": "https://quantumcomputing.stackexchange.com"
+    },
+    "Quantum Computing Meta": {
+      "name": "quantumcomputing.meta",
+      "url": "https://quantumcomputing.meta.stackexchange.com"
+    },
+    "EOS.IO": {
+      "name": "eosio",
+      "url": "https://eosio.stackexchange.com"
+    },
+    "EOS.IO Meta": {
+      "name": "eosio.meta",
+      "url": "https://eosio.meta.stackexchange.com"
+    },
+    "Tezos": {
+      "name": "tezos",
+      "url": "https://tezos.stackexchange.com"
+    },
+    "Tezos Meta": {
+      "name": "tezos.meta",
+      "url": "https://tezos.meta.stackexchange.com"
+    },
+    "Operations Research": {
+      "name": "or",
+      "url": "https://or.stackexchange.com"
+    },
+    "Operations Research Meta": {
+      "name": "or.meta",
+      "url": "https://or.meta.stackexchange.com"
+    }
+  },
+  "top_stack_sites": {
+    "Stack Overflow": {
+      "name": "stackoverflow",
+      "url": "https://stackoverflow.com"
+    },
+    "Server Fault": {
+      "name": "serverfault",
+      "url": "https://serverfault.com"
+    },
+    "Super User": {
+      "name": "superuser",
+      "url": "https://superuser.com"
+    },
+    "Meta Stack Exchange": {
+      "name": "meta",
+      "url": "https://meta.stackexchange.com"
+    },
+    "Web Applications Stack Exchange": {
+      "name": "webapps",
+      "url": "https://webapps.stackexchange.com"
+    },
+    "Web Applications Meta": {
+      "name": "webapps.meta",
+      "url": "https://webapps.meta.stackexchange.com"
+    },
+    "Arqade": {
+      "name": "gaming",
+      "url": "https://gaming.stackexchange.com"
+    },
+    "Arqade Meta": {
+      "name": "gaming.meta",
+      "url": "https://gaming.meta.stackexchange.com"
+    },
+    "Webmasters": {
+      "name": "webmasters",
+      "url": "https://webmasters.stackexchange.com"
+    },
+    "Webmasters Meta": {
+      "name": "webmasters.meta",
+      "url": "https://webmasters.meta.stackexchange.com"
+    },
+    "Seasoned Advice": {
+      "name": "cooking",
+      "url": "https://cooking.stackexchange.com"
+    },
+    "Seasoned Advice Meta": {
+      "name": "cooking.meta",
+      "url": "https://cooking.meta.stackexchange.com"
+    },
+    "Game Development": {
+      "name": "gamedev",
+      "url": "https://gamedev.stackexchange.com"
+    },
+    "Game Development Meta": {
+      "name": "gamedev.meta",
+      "url": "https://gamedev.meta.stackexchange.com"
+    },
+    "Photography": {
+      "name": "photo",
+      "url": "https://photo.stackexchange.com"
+    },
+    "Photography Meta": {
+      "name": "photo.meta",
+      "url": "https://photo.meta.stackexchange.com"
+    },
+    "Cross Validated": {
+      "name": "stats",
+      "url": "https://stats.stackexchange.com"
+    },
+    "Cross Validated Meta": {
+      "name": "stats.meta",
+      "url": "https://stats.meta.stackexchange.com"
+    },
+    "Mathematics": {
+      "name": "math",
+      "url": "https://math.stackexchange.com"
+    },
+    "Mathematics Meta": {
+      "name": "math.meta",
+      "url": "https://math.meta.stackexchange.com"
+    },
+    "Home Improvement": {
+      "name": "diy",
+      "url": "https://diy.stackexchange.com"
+    },
+    "Home Improvement Meta": {
+      "name": "diy.meta",
+      "url": "https://diy.meta.stackexchange.com"
+    },
+    "Meta Super User": {
+      "name": "meta.superuser",
+      "url": "https://meta.superuser.com"
+    },
+    "Meta Server Fault": {
+      "name": "meta.serverfault",
+      "url": "https://meta.serverfault.com"
+    },
+    "Geographic Information Systems": {
+      "name": "gis",
+      "url": "https://gis.stackexchange.com"
+    },
+    "Geographic Information Systems Meta": {
+      "name": "gis.meta",
+      "url": "https://gis.meta.stackexchange.com"
+    },
+    "TeX - LaTeX": {
+      "name": "tex",
+      "url": "https://tex.stackexchange.com"
+    },
+    "TeX - LaTeX Meta": {
+      "name": "tex.meta",
+      "url": "https://tex.meta.stackexchange.com"
+    },
+    "Ask Ubuntu": {
+      "name": "askubuntu",
+      "url": "https://askubuntu.com"
+    },
+    "Ask Ubuntu Meta": {
+      "name": "meta.askubuntu",
+      "url": "https://meta.askubuntu.com"
+    },
+    "Personal Finance & Money": {
+      "name": "money",
+      "url": "https://money.stackexchange.com"
+    },
+    "Personal Finance & Money Meta": {
+      "name": "money.meta",
+      "url": "https://money.meta.stackexchange.com"
+    },
+    "English Language & Usage": {
+      "name": "english",
+      "url": "https://english.stackexchange.com"
+    },
+    "English Language & Usage Meta": {
+      "name": "english.meta",
+      "url": "https://english.meta.stackexchange.com"
+    },
+    "Stack Apps": {
+      "name": "stackapps",
+      "url": "https://stackapps.com"
+    },
+    "User Experience": {
+      "name": "ux",
+      "url": "https://ux.stackexchange.com"
+    },
+    "User Experience Meta": {
+      "name": "ux.meta",
+      "url": "https://ux.meta.stackexchange.com"
+    },
+    "Unix & Linux Stack Exchange": {
+      "name": "unix",
+      "url": "https://unix.stackexchange.com"
+    },
+    "Unix & Linux Meta": {
+      "name": "unix.meta",
+      "url": "https://unix.meta.stackexchange.com"
+    },
+    "WordPress Development": {
+      "name": "wordpress",
+      "url": "https://wordpress.stackexchange.com"
+    },
+    "WordPress Development Meta": {
+      "name": "wordpress.meta",
+      "url": "https://wordpress.meta.stackexchange.com"
+    },
+    "Theoretical Computer Science": {
+      "name": "cstheory",
+      "url": "https://cstheory.stackexchange.com"
+    },
+    "Theoretical Computer Science Meta": {
+      "name": "cstheory.meta",
+      "url": "https://cstheory.meta.stackexchange.com"
+    },
+    "Ask Different": {
+      "name": "apple",
+      "url": "https://apple.stackexchange.com"
+    },
+    "Ask Different Meta": {
+      "name": "apple.meta",
+      "url": "https://apple.meta.stackexchange.com"
+    },
+    "Role-playing Games": {
+      "name": "rpg",
+      "url": "https://rpg.stackexchange.com"
+    },
+    "Role-playing Games Meta": {
+      "name": "rpg.meta",
+      "url": "https://rpg.meta.stackexchange.com"
+    },
+    "Bicycles": {
+      "name": "bicycles",
+      "url": "https://bicycles.stackexchange.com"
+    },
+    "Bicycles Meta": {
+      "name": "bicycles.meta",
+      "url": "https://bicycles.meta.stackexchange.com"
+    },
+    "Software Engineering Stack Exchange": {
+      "name": "softwareengineering",
+      "url": "https://softwareengineering.stackexchange.com"
+    },
+    "Software Engineering Meta": {
+      "name": "softwareengineering.meta",
+      "url": "https://softwareengineering.meta.stackexchange.com"
+    },
+    "Electrical Engineering": {
+      "name": "electronics",
+      "url": "https://electronics.stackexchange.com"
+    },
+    "Electrical Engineering Meta": {
+      "name": "electronics.meta",
+      "url": "https://electronics.meta.stackexchange.com"
+    },
+    "Android Enthusiasts": {
+      "name": "android",
+      "url": "https://android.stackexchange.com"
+    },
+    "Android Enthusiasts Meta": {
+      "name": "android.meta",
+      "url": "https://android.meta.stackexchange.com"
+    },
+    "Board & Card Games": {
+      "name": "boardgames",
+      "url": "https://boardgames.stackexchange.com"
+    },
+    "Board & Card Games Meta": {
+      "name": "boardgames.meta",
+      "url": "https://boardgames.meta.stackexchange.com"
+    },
+    "Physics": {
+      "name": "physics",
+      "url": "https://physics.stackexchange.com"
+    },
+    "Physics Meta": {
+      "name": "physics.meta",
+      "url": "https://physics.meta.stackexchange.com"
+    },
+    "Homebrewing": {
+      "name": "homebrew",
+      "url": "https://homebrew.stackexchange.com"
+    },
+    "Homebrewing Meta": {
+      "name": "homebrew.meta",
+      "url": "https://homebrew.meta.stackexchange.com"
+    },
+    "Information Security Stack Exchange": {
+      "name": "security",
+      "url": "https://security.stackexchange.com"
+    },
+    "Information Security Meta": {
+      "name": "security.meta",
+      "url": "https://security.meta.stackexchange.com"
+    },
+    "Writing": {
+      "name": "writing",
+      "url": "https://writing.stackexchange.com"
+    },
+    "Writing Meta": {
+      "name": "writing.meta",
+      "url": "https://writing.meta.stackexchange.com"
+    },
+    "Video Production": {
+      "name": "video",
+      "url": "https://video.stackexchange.com"
+    },
+    "Video Production Meta": {
+      "name": "video.meta",
+      "url": "https://video.meta.stackexchange.com"
+    },
+    "Graphic Design": {
+      "name": "graphicdesign",
+      "url": "https://graphicdesign.stackexchange.com"
+    },
+    "Graphic Design Meta": {
+      "name": "graphicdesign.meta",
+      "url": "https://graphicdesign.meta.stackexchange.com"
+    },
+    "Database Administrators": {
+      "name": "dba",
+      "url": "https://dba.stackexchange.com"
+    },
+    "Database Administrators Meta": {
+      "name": "dba.meta",
+      "url": "https://dba.meta.stackexchange.com"
+    },
+    "Science Fiction & Fantasy": {
+      "name": "scifi",
+      "url": "https://scifi.stackexchange.com"
+    },
+    "Science Fiction & Fantasy Meta": {
+      "name": "scifi.meta",
+      "url": "https://scifi.meta.stackexchange.com"
+    },
+    "Code Review Stack Exchange": {
+      "name": "codereview",
+      "url": "https://codereview.stackexchange.com"
+    },
+    "Code Review Meta": {
+      "name": "codereview.meta",
+      "url": "https://codereview.meta.stackexchange.com"
+    }
+  }
 }
