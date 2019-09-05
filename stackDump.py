@@ -328,14 +328,17 @@ def getdataByUserId(userid,pagesize,maxpages,site_search_apilink,type):
                     site_name = unescape(str(item['site_name']))
                     printResult(userid, user_id, site_name, None,
                                 quota_status)
-                    print(good("Getting Questions"), end='\n\n')
-                    getData(user_id,site_name,"questions")
+                    if type == "questions":
+                        print(good("Getting Questions"), end='\n\n')
+                        getData(user_id,site_name,"questions")
 
-                    print(good("Getting Answers"), end='\n\n')
-                    getData(user_id,site_name,"answers")
+                    if type == "answers":
+                        print(good("Getting Answers"), end='\n\n')
+                        getData(user_id,site_name,"answers")
 
-                    print(good("Getting Comments"), end='\n\n')
-                    getData(user_id,site_name,"comments")
+                    if type == "comments":
+                        print(good("Getting Comments"), end='\n\n')
+                        getData(user_id,site_name,"comments")
             else:
                 quota_status = str(quota_remaining)+"/"+str(
                                                         quota_max
@@ -359,7 +362,14 @@ def getdataByUserId(userid,pagesize,maxpages,site_search_apilink,type):
 
 if __name__ == '__main__':
     parser = ArgumentParser(
-        description='StackDump', epilog='''Example: stackdump -k "example"\n''',
+            description='StackDump', epilog='''Example:\n 
+            Advanced Keyword Search: stackdump -k "example"\n
+            Keywork search with Limit: stackdump -k "example" -l 50\n
+            Find User exact match: stackdump -f Goron -e\n
+            Get answers for Userid: stackdump -u 123123 -t answers\n
+            Get questions for Userid: stackdump -u 123123 -t questions\n
+            Get comments for Userid: stackdump -u 123123 -t comments\n
+                                                          ''',
         formatter_class=RawTextHelpFormatter)
 
     requiredparser = parser.add_argument_group('required arguments')
@@ -376,8 +386,6 @@ if __name__ == '__main__':
     requiredparser.add_argument('-u', '--user-id', help="Stack UserId got from -f/--find-user",
                                 type=int, dest="userId")
 
-    requiredparser.add_argument('-s', '--get-site', help="Get UserId's associated StackExchange sites",
-                                action='store_true', dest="getSite")
     requiredparser.add_argument('-t', '--type', help="Get all answers, questions and comments posted by an UserId",
                                 type=str, dest="type")
 
