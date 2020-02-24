@@ -11,8 +11,7 @@ from html import unescape
 from argparse import ArgumentParser, RawTextHelpFormatter
 
 try:
-    from naryal2580.style import info, fetchFormattedTime, uline, bold, italic, \
-  dim, blue, yellow, rst, bad, coolExit, good
+    from stoyled import *
 except ImportError:
     print("Install missing package with `pip3 install -r ./requirements.txt`", end='\n\n')
     exit(1)
